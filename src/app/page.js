@@ -1,9 +1,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Link from "next/link";
 
 export default function Home() {
   return (
-   <main className={styles.main}>
+   <main id="top" className={styles.main}>
      <div className={styles.principal}>
       <video
         autoPlay
@@ -104,6 +105,135 @@ export default function Home() {
             className={styles.servicioIcon}
           />
           <h3 className={styles.servicioTitulo}>Edición de videos</h3>
+        </div>
+      </div>
+     </div>
+     <div className={styles.portafolio}>
+      <h2 className={styles.portafolioTitle}>Conoce un poco de nuestro trabajo...</h2>
+      <div className={styles.portafolioGrid}>
+        <Image 
+          src="/foto1.jpeg" 
+          alt="Portafolio foto 1" 
+          width={200} 
+          height={200}
+          className={styles.portafolioImage}
+        />
+        <Image 
+          src="/foto2.jpeg" 
+          alt="Portafolio foto 2" 
+          width={200} 
+          height={200}
+          className={styles.portafolioImage}
+        />
+        <Image 
+          src="/foto3.jpeg" 
+          alt="Portafolio foto 3" 
+          width={200} 
+          height={200}
+          className={styles.portafolioImage}
+        />
+        <Image 
+          src="/foto4.jpeg" 
+          alt="Portafolio foto 4" 
+          width={200} 
+          height={200}
+          className={styles.portafolioImage}
+        />
+        <Image 
+          src="/foto5.jpeg" 
+          alt="Portafolio foto 5" 
+          width={200} 
+          height={200}
+          className={styles.portafolioImage}
+        />
+        <Image 
+          src="/foto6.jpeg" 
+          alt="Portafolio foto 6" 
+          width={200} 
+          height={200}
+          className={styles.portafolioImage}
+        />
+        <Image 
+          src="/foto7.jpeg" 
+          alt="Portafolio foto 7" 
+          width={200} 
+          height={200}
+          className={styles.portafolioImage}
+        />
+        <Image 
+          src="/foto8.jpeg" 
+          alt="Portafolio foto 8" 
+          width={200} 
+          height={200}
+          className={styles.portafolioImage}
+        />
+      </div>
+        <Link href="https://www.instagram.com/reveal_oficial?igsh=MXc1OGh2cHVuaG5iMQ==" className={styles.verMas} target="_blank">
+          Ver más...
+        </Link>
+     </div>
+     <div className={styles.equipo}>
+      <h2 className={styles.equipoTitle}>Te presentamos a nuestro equipo</h2>
+      <div className={styles.equipoGrid}>
+        <div className={styles.equipoMiembro}>
+          <a href="https://www.instagram.com/dreapulgarin16?igsh=MWl5MG1rOGU0ZnYzZw%3D%3D&utm_source=qr" target="_blank" rel="Andrea ig">
+            <Image 
+              src="/Andrea.jpeg" 
+              alt="Andrea Pulgarín" 
+              width={150} 
+              height={150}
+              className={styles.equipoImage}
+            />
+          </a>
+          <h3 className={styles.equipoNombre}>Andrea Pulgarín</h3>
+        </div>
+        <div className={styles.equipoMiembro}>
+          <a href="https://www.instagram.com/sofiis_velasquez?igsh=aXR4czhmYmhjbG5x" target="_blank" rel="Sofia ig">
+            <Image 
+              src="/Sofia.jpeg" 
+              alt="Sofia Velásquez" 
+              width={150} 
+              height={150}
+              className={styles.equipoImage}
+            />
+          </a>
+          <h3 className={styles.equipoNombre}>Sofia Velásquez</h3>
+        </div>
+        <div className={styles.equipoMiembro}>
+          <a href="https://www.instagram.com/juanfermp17?igsh=NXY3dG5uZWplaTly" target="_blank" rel="Juan Fernando ig">
+            <Image 
+              src="/JuanFernando.jpeg" 
+              alt="Juan Fernando Montoya" 
+              width={150} 
+              height={150}
+              className={styles.equipoImage}
+            />
+          </a>
+          <h3 className={styles.equipoNombre}>Juan Fernando Montoya</h3>
+        </div>
+        <div className={styles.equipoMiembro}>
+          <a href="https://www.instagram.com/vale_sanchezq?igsh=d3ZudXViNW9sa3Jp" target="_blank" rel="Vale ig">
+            <Image 
+              src="/Vale.jpeg" 
+              alt="Vale Sánchez" 
+              width={150} 
+              height={150}
+              className={styles.equipoImage}
+            />
+          </a>
+          <h3 className={styles.equipoNombre}>Vale Sánchez</h3>
+        </div>
+        <div className={styles.equipoMiembro}>
+          <a href="https://www.instagram.com/majandry_06?igsh=NTZ2bzBxMGVxZ3Ay" target="_blank" rel="Maria Alejandra ig">
+            <Image 
+              src="/MAlejandra.jpeg" 
+              alt="María Alejandra" 
+              width={150} 
+              height={150}
+              className={styles.equipoImage}
+            />
+          </a>
+          <h3 className={styles.equipoNombre}>María Alejandra</h3>
         </div>
       </div>
      </div>
