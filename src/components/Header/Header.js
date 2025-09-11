@@ -6,6 +6,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
+        <Link href="/">
           <Image
             src="/reveal-icono.png"
             alt="Reveal Logo"
@@ -18,21 +19,22 @@ const Header = () => {
             width={120}
             height={30}
           />
+        </Link>
       </div>
       <nav className={styles.navigation}>
-        <Link href="/" className={styles.navLink}>
+        <Link href="#inicio" className={styles.navLink}>
           Inicio
         </Link>
-        <Link href="/portafolio" className={styles.navLink}>
+        <Link href="#portafolio" className={styles.navLink}>
           Portafolio
         </Link>
-        <Link href="/servicios" className={styles.navLink}>
+        <Link href="#servicios" className={styles.navLink}>
           Servicios
         </Link>
-        <Link href="/equipo" className={styles.navLink}>
+        <Link href="#equipo" className={styles.navLink}>
           Nuestro equipo
         </Link>
-        <Link href="/contacto" className={styles.navLink}>
+        <Link href="#contacto" className={styles.navLink}>
           Contacto
         </Link>
       </nav>

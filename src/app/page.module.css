@@ -188,8 +188,14 @@
   height: 200px;
   object-fit: cover;
   border-radius: 8px;
+  cursor: pointer;
 }
 
+.portafolioImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(221, 0, 42, 0.7);
+  transform: translateY(-2px);
+}
 
 .verMas {
   color: var(--primary-text-color);
@@ -269,6 +275,13 @@
   margin: 15px 0 0 0;
 }
 
+.equipoIg {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--arrobaIg-color);
+  margin: 15px 0 0 0;
+}
+
 @media (max-width: 768px) {
   .equipoGrid {
     grid-template-columns: repeat(2, 1fr);
@@ -288,4 +301,131 @@
     grid-template-columns: 1fr;
     max-width: 300px;
   }
+}
+
+.contacto {
+  background-color: var(--background);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contactoTitle {
+  font-size: 32px;
+  font-weight: bold;
+  color: white;
+  margin: 0 0 40px 0;
+}
+
+.contactoGrid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contactoItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.contactoItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+
+.contactoItem[type="button"] {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.contactoItem[type="button"]:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.contactoIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: currentColor;
+}
+
+.contactoTexto {
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .contactoGrid {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contactoItem {
+    justify-content: center;
+    min-width: 250px;
+  }
+}
+
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  cursor: pointer;
+}
+
+.modalContent {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  cursor: default;
+}
+
+.modalImage {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+
+}
+
+.closeButton {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+}
+
+.closeButton:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
