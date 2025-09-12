@@ -24,6 +24,24 @@
 
 .logo{
     margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoIcon {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+.logoText {
+  width: 120px !important;
+  height: 30px !important;
 }
 
 
@@ -53,4 +71,147 @@
 }
 .navLink:active {
   transform: translateY(0);
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 0 15px;
+  }
+  
+  .logoIcon {
+    width: 38px !important;
+    height: 38px !important;
+  }
+  
+  .logoText {
+    width: 110px !important;
+    height: 28px !important;
+  }
+  
+  .navigation {
+    gap: 35px;
+    margin: 0 20px;
+  }
+  
+  .navLink {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    height: 60px;
+    padding: 0 15px;
+  }
+  
+  .logo {
+    margin-bottom: 3px;
+  }
+  
+  .logoIcon {
+    width: 35px !important;
+    height: 35px !important;
+  }
+  
+  .logoText {
+    width: 100px !important;
+    height: 25px !important;
+  }
+  
+  .navigation {
+    gap: 20px;
+    margin: 0 10px;
+  }
+  
+  .navLink {
+    font-size: 12px;
+    padding: 5px 10px;
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    height: 55px;
+    padding: 0 12px;
+  }
+  
+  .logoIcon {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  
+  .logoText {
+    width: 85px !important;
+    height: 21px !important;
+  }
+  
+  .navigation {
+    gap: 15px;
+    margin: 0 5px;
+  }
+  
+  .navLink {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 50px;
+    padding: 0 10px;
+  }
+  
+  .logo {
+    margin-bottom: 2px;
+  }
+  
+  .logoIcon {
+    width: 25px !important;
+    height: 25px !important;
+  }
+  
+  .logoText {
+    width: 70px !important;
+    height: 17px !important;
+  }
+  
+  .navigation {
+    gap: 10px;
+    margin: 0;
+  }
+  
+  .navLink {
+    font-size: 10px;
+    padding: 3px 6px;
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 360px) {
+  .header {
+    height: 45px;
+    padding: 0 8px;
+  }
+  
+  .logoIcon {
+    width: 22px !important;
+    height: 22px !important;
+  }
+  
+  .logoText {
+    width: 60px !important;
+    height: 15px !important;
+  }
+  
+  .navigation {
+    gap: 8px;
+  }
+  
+  .navLink {
+    font-size: 9px;
+    padding: 2px 4px;
+  }
 }

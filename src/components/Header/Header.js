@@ -57,12 +57,14 @@ const Header = () => {
             alt="Reveal Logo"
             width={40}
             height={40}
+            className={styles.logoIcon}
           />
           <Image
             src="/reveal.png"
             alt="Reveal Text"
             width={120}
             height={30}
+            className={styles.logoText}
           />
         </Link>
       </div>
