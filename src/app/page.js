@@ -224,6 +224,7 @@ export default function Home() {
             />
           </a>
           <h3 className={styles.equipoNombre}>Andrea Pulgarín</h3>
+          <p className={styles.equipoIg}><a href="https://www.instagram.com/dreapulgarin16?igsh=MWl5MG1rOGU0ZnYzZw%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer">@dreapulgarin16</a></p>
         </div>
         <div className={styles.equipoMiembro}>
           <a href="https://www.instagram.com/sofiis_velasquez?igsh=aXR4czhmYmhjbG5x" target="_blank" rel="Sofia ig">
@@ -236,6 +237,7 @@ export default function Home() {
             />
           </a>
           <h3 className={styles.equipoNombre}>Sofia Velásquez</h3>
+          <p className={styles.equipoIg}><a href="https://www.instagram.com/sofiis_velasquez?igsh=aXR4czhmYmhjbG5x" target="_blank" rel="noopener noreferrer">@sofiis_velasquez</a></p>
         </div>
         <div className={styles.equipoMiembro}>
           <a href="https://www.instagram.com/juanfermp17?igsh=NXY3dG5uZWplaTly" target="_blank" rel="Juan Fernando ig">
@@ -248,6 +250,7 @@ export default function Home() {
             />
           </a>
           <h3 className={styles.equipoNombre}>Juan Fernando Montoya</h3>
+          <p className={styles.equipoIg}><a href="https://www.instagram.com/juanfermp17?igsh=NXY3dG5uZWplaTly" target="_blank" rel="noopener noreferrer">@juanfermp17</a></p>
         </div>
         <div className={styles.equipoMiembro}>
           <a href="https://www.instagram.com/vale_sanchezq?igsh=d3ZudXViNW9sa3Jp" target="_blank" rel="Vale ig">
@@ -260,6 +263,7 @@ export default function Home() {
             />
           </a>
           <h3 className={styles.equipoNombre}>Vale Sánchez</h3>
+          <p className={styles.equipoIg}><a href="https://www.instagram.com/vale_sanchezq?igsh=d3ZudXViNW9sa3Jp" target="_blank" rel="noopener noreferrer">@vale_sanchezq</a></p>
         </div>
         <div className={styles.equipoMiembro}>
           <a href="https://www.instagram.com/majandry_06?igsh=NTZ2bzBxMGVxZ3Ay" target="_blank" rel="Maria Alejandra ig">
@@ -272,6 +276,7 @@ export default function Home() {
             />
           </a>
           <h3 className={styles.equipoNombre}>María Alejandra</h3>
+          <p className={styles.equipoIg}><a href="https://www.instagram.com/majandry_06?igsh=NTZ2bzBxMGVxZ3Ay" target="_blank" rel="noopener noreferrer">@majandry_06</a></p>
         </div>
       </div>
      </div>
