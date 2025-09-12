@@ -10,7 +10,7 @@
 .principal{
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 700px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -71,6 +71,7 @@
   padding: 60px 20px;
   background-color: var(--background-secondary);
   text-align: center;
+  height: 600px;
 }
 
 .serviciosTitle {
@@ -83,15 +84,15 @@
 .serviciosGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  max-width: 800px;
+  gap: 30px;
+  max-width: 1000px;
   margin: 0 auto;
   justify-items: center;
 }
 
 .serviciosGrid .servicioCard:nth-child(5) {
   grid-column: 1;
-  margin-left: 50%;
+  margin-left: 25%;
 }
 
 .serviciosGrid .servicioCard:nth-child(6) {
@@ -100,12 +101,12 @@
 
 .serviciosGrid .servicioCard:nth-child(7) {
   grid-column: 4;
-  margin-right: 50%;
+  margin-right: 25%;
 }
 
 .servicioCard {
   background: white;
-  padding: 20px 15px;
+  padding: 25px 20px;
   border-radius: 12px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -113,8 +114,8 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 160px;
-  height: 140px;
+  width: 180px;
+  height: 160px;
   justify-content: center;
 }
 
@@ -139,7 +140,8 @@
 @media (max-width: 768px) {
   .serviciosGrid {
     grid-template-columns: repeat(2, 1fr);
-    max-width: 500px;
+    max-width: 450px;
+    gap: 25px;
   }
   
   .serviciosGrid .servicioCard:nth-child(5),
@@ -149,16 +151,23 @@
     margin-left: 0;
     margin-right: 0;
   }
+  
+  .servicioCard {
+    width: 160px;
+    height: 140px;
+  }
 }
 
 @media (max-width: 480px) {
   .serviciosGrid {
     grid-template-columns: 1fr;
-    max-width: 300px;
+    max-width: 250px;
+    gap: 20px;
   }
   
   .servicioCard {
-    width: 100%;
+    width: 200px;
+    height: 140px;
   }
 }
 
@@ -179,29 +188,57 @@
 .portafolioGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px 50px;
-  max-width: 900px;
+  gap: 30px;
+  max-width: 1200px;
   margin: 0 auto 40px auto;
+  padding: 0 20px;
 }
 
 .portafolioImage {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 8px;
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: 1 !important;
+  object-fit: cover !important;
+  border-radius: 12px;
   cursor: pointer;
+  display: block !important;
 }
 
 .portafolioImage:hover {
-  transform: scale(1.05);
+  transform: scale(1.05) translateY(-2px);
   box-shadow: 0 8px 25px rgba(221, 0, 42, 0.7);
-  transform: translateY(-2px);
 }
 
 .portafolio .contactoItem {
   position: absolute;
   bottom: 20px;
   right: 20px;
+}
+
+/* Media queries para portafolio */
+@media (max-width: 1024px) {
+  .portafolioGrid {
+    max-width: 1000px;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portafolioGrid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    gap: 20px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portafolioGrid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 400px;
+    gap: 15px;
+    padding: 0 10px;
+  }
 }
 
 
@@ -295,14 +332,15 @@
 
 .contacto {
   background-color: var(--background);
-  padding: 60px 20px;
+  padding: 30px 20px;
   text-align: center;
+  height: 100px;
 }
 
 .contactoTitle {
-  font-size: 32px;
+  font-size: 25px;
   font-weight: bold;
-  color: white;
+  color: var(--primary-text-color);
   margin: 0 0 40px 0;
 }
 
@@ -403,7 +441,7 @@
 
 .closeButton {
   position: absolute;
-  top: 80px;
+  top: 20px;
   right: 0;
   background: none;
   border: none;
