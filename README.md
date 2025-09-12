@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Reveal Studio
 
-## Getting Started
+**Estudio de fotografía profesional en Medellín**
 
-First, run the development server:
+Sitio web oficial que presenta nuestros servicios de fotografía y videografía, incluyendo portafolio interactivo y información de contacto.
+
+## Servicios
+
+- Fotografía de moda comercial y editorial
+- Fotografía de producto
+- Fotografía para eventos
+- Books fotográficos
+- Videos y edición
+
+## Tecnologías
+
+- **Framework**: Next.js 15
+- **Estilos**: CSS Modules
+- **Optimización**: Next.js Image
+- **Build**: Turbopack
+
+## Desarrollo
 
 ```bash
+# Instalar dependencias
+npm install
+
+# Servidor de desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build de producción
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abrir [http://localhost:3000](http://localhost:3000) para ver el sitio.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Características
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Diseño responsive
+- Galería interactiva con modal
+- Navegación suave entre secciones
+- Optimización de imágenes
+- Información de contacto y redes sociales
 
-## Learn More
+## Contacto
 
-To learn more about Next.js, take a look at the following resources:
+**Reveal Studio Medellín**
+- Email: revealstudiooficial@gmail.com
+- WhatsApp: +57 305 303 0367
+- Instagram: [@reveal_oficial](https://www.instagram.com/reveal_oficial)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*Capturamos momentos únicos con estilo excepcional*
