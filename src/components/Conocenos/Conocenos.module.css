@@ -1,0 +1,56 @@
+.conocenos {
+  background-color: var(--background);
+  padding: 40px 20px;
+  text-align: center;
+  min-height: 100px;
+}
+
+.conocenosTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--primary-text-color);
+  margin: 0 0 20px 0;
+}
+
+.conocenosDescription {
+  font-size: 18px;
+  line-height: 1.6;
+  color: var(--primary-text-color);
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Responsive para sección Conocenos */
+@media (max-width: 768px) {
+  .conocenos {
+    padding: 30px 15px;
+  }
+  
+  .conocenosTitle {
+    font-size: 28px;
+    margin: 0 0 15px 0;
+  }
+  
+  .conocenosDescription {
+    font-size: 16px;
+    line-height: 1.5;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .conocenos {
+    padding: 25px 10px;
+  }
+  
+  .conocenosTitle {
+    font-size: 24px;
+    margin: 0 0 12px 0;
+  }
+  
+  .conocenosDescription {
+    font-size: 15px;
+    line-height: 1.4;
+    padding: 0 5px;
+  }
+}

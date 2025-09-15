@@ -1,0 +1,119 @@
+.portafolio{
+  background-color: var(--background);
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+}
+
+.portafolioTitle {
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 0 0 40px 0;
+}
+
+.portafolioGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  padding: 0 20px;
+}
+
+.portafolioImage {
+  width: 100% !important;
+  height: 100% !important;
+  aspect-ratio: 1 !important;
+  object-fit: cover !important;
+  border-radius: 12px;
+  cursor: pointer;
+  display: block !important;
+}
+
+.portafolioImage:hover {
+  transform: scale(1.05) translateY(-2px);
+  box-shadow: 0 8px 25px rgba(221, 0, 42, 0.7);
+}
+
+.contactoItem {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.contactoItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+}
+
+.contactoIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  color: currentColor;
+}
+
+.contactoTexto {
+  font-weight: 500;
+}
+
+/* Responsive adicional para portafolio */
+@media (max-width: 1024px) {
+  .portafolioGrid {
+    max-width: 1000px;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .portafolio {
+    padding: 40px 15px;
+  }
+  
+  .portafolioTitle {
+    font-size: 26px;
+    margin: 0 0 30px 0;
+  }
+  
+  .portafolioGrid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 600px;
+    gap: 20px;
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .portafolio {
+    padding: 30px 10px;
+  }
+  
+  .portafolioTitle {
+    font-size: 22px;
+    margin: 0 0 25px 0;
+  }
+  
+  .portafolioGrid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 400px;
+    gap: 15px;
+    padding: 0 10px;
+  }
+  
+  .contactoIcon {
+    width: 18px;
+    height: 18px;
+  }
+}

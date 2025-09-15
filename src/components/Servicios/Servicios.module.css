@@ -1,0 +1,124 @@
+.servicios {
+  padding: 60px 20px;
+  background-color: var(--background-secondary);
+  text-align: center;
+  height: auto;
+  min-height: 600px;
+}
+
+.serviciosTitle {
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--third-text-color);
+  margin: 0 0 50px 0;
+}
+
+.serviciosGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+  justify-items: center;
+}
+
+.serviciosGrid .servicioCard:nth-child(5) {
+  grid-column: 1;
+  margin-left: 25%;
+}
+
+.serviciosGrid .servicioCard:nth-child(6) {
+  grid-column: 2 / 4;
+}
+
+.serviciosGrid .servicioCard:nth-child(7) {
+  grid-column: 4;
+  margin-right: 25%;
+}
+
+.servicioCard {
+  background: white;
+  padding: 25px 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 180px;
+  height: 160px;
+  justify-content: center;
+}
+
+.servicioCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+}
+
+.servicioIcon {
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.servicioTitulo {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--third-text-color);
+  margin: 0;
+  line-height: 1.2;
+}
+
+@media (max-width: 768px) {
+  .servicios {
+    padding: 40px 15px;
+    min-height: 500px;
+  }
+  
+  .serviciosTitle {
+    font-size: 28px;
+    margin: 0 0 35px 0;
+  }
+  
+  .serviciosGrid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 450px;
+    gap: 25px;
+  }
+  
+  .serviciosGrid .servicioCard:nth-child(5),
+  .serviciosGrid .servicioCard:nth-child(6),
+  .serviciosGrid .servicioCard:nth-child(7) {
+    grid-column: span 1;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  
+  .servicioCard {
+    width: 160px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .servicios {
+    padding: 30px 10px;
+    min-height: 400px;
+  }
+  
+  .serviciosTitle {
+    font-size: 24px;
+    margin: 0 0 25px 0;
+  }
+  
+  .serviciosGrid {
+    grid-template-columns: 1fr;
+    max-width: 250px;
+    gap: 20px;
+  }
+  
+  .servicioCard {
+    width: 200px;
+    height: 140px;
+  }
+}
