@@ -1,0 +1,316 @@
+.equipo {
+  background-color: var(--background-secondary);
+  padding: 50px 20px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.equipoTitle {
+  grid-column: 1 / -1; 
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--third-text-color);
+  margin: 0 0 40px 0;
+}
+
+.equipoImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 4px solid var(--primary-color);
+}
+
+.equipoImage:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(221, 0, 42, 0.7);
+}
+
+.equipoNombre {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--third-text-color);
+  margin: 15px 0 0 0;
+}
+
+.equipoIg {
+  font-size: 13px;
+  color: var(--arrobaIg-color);
+  margin: 15px 0 0 0;
+}
+
+.equipoIg a {
+  color: var(--arrobaIg-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+@media (max-width: 1000px) {
+  .equipo {
+    grid-template-columns: 1fr;
+    max-width: 700px;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+  
+  .equipoCard {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 20px;
+    max-width: 100%;
+  }
+  
+  .equipoHeader {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 15px;
+  }
+  
+  .equipoRoles {
+    text-align: center;
+  }
+  
+  .equipoCard .equipoImage {
+    width: 150px;
+    height: 150px;
+  }
+  
+  .equipoCard .equipoNombre {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .equipo {
+    padding: 30px 15px;
+    gap: 25px;
+  }
+  
+  .equipoTitle {
+    font-size: 26px;
+    margin: 0 0 30px 0;
+  }
+  
+  .equipoCard {
+    padding: 25px 20px;
+    gap: 18px;
+    border-radius: 15px;
+  }
+  
+  .equipoCard .equipoImage {
+    width: 130px;
+    height: 130px;
+  }
+  
+  .equipoCard .equipoNombre {
+    font-size: 20px;
+    line-height: 1.2;
+  }
+  
+  .equipoCard .equipoIg {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+  
+  
+  .equipoRoles li {
+    font-size: 16px;
+  }
+}
+
+.equipoCard {
+  background: var(--background-secondary);
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 30px;
+  position: relative;
+  min-width: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.equipoCard:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+.equipoImageContainer {
+  display: flex;
+  align-items: center;
+}
+
+.equipoCard .equipoImage {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  border: 3px solid var(--primary-color);
+  object-fit: cover;
+}
+
+.equipoContent {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+}
+
+.equipoHeader {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 20px;
+}
+
+.equipoCard .equipoNombre {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--third-text-color);
+  align-self: center;
+}
+
+.equipoCard .equipoIg {
+  color: var(--third-text-color);
+  background: #f0f0f0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  align-self: center;
+}
+
+.equipoCard .equipoIg:hover {
+  background: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.equipoCard .equipoIg a {
+  color: var(--arrobaIg-color);
+  text-decoration: none;
+  font-style: italic;
+}
+
+.equipoRoles {
+  align-self: start;
+  text-align: center;
+}
+
+.equipoRoles ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  display: inline-block;
+}
+
+.equipoRoles li {
+  font-size: 18px;
+  color: var(--third-text-color);
+  margin: 5px 0;
+  font-weight: 500;
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.equipoRoles li::before {
+  content: "•";
+  color: var(--primary-color);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+
+@media (max-width: 480px) {
+  .equipo {
+    padding: 20px 10px;
+    gap: 20px;
+  }
+  
+  .equipoTitle {
+    font-size: 22px;
+    margin: 0 0 25px 0;
+  }
+  
+  .equipoCard {
+    padding: 20px 15px;
+    gap: 15px;
+    border-radius: 12px;
+  }
+  
+  .equipoCard .equipoImage {
+    width: 110px;
+    height: 110px;
+  }
+  
+  .equipoCard .equipoNombre {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+  
+  .equipoCard .equipoIg {
+    font-size: 12px;
+    padding: 5px 8px;
+  }
+  
+  .equipoRoles p {
+    font-size: 14px;
+    margin: 3px 0;
+  }
+  
+  .equipoRoles li {
+    font-size: 14px;
+    margin: 3px 0;
+  }
+}
+
+@media (max-width: 360px) {
+  .equipo {
+    padding: 15px 8px;
+    gap: 18px;
+  }
+  
+  .equipoTitle {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+  }
+  
+  .equipoCard {
+    padding: 18px 12px;
+    gap: 12px;
+  }
+  
+  .equipoCard .equipoImage {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .equipoCard .equipoNombre {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+  
+  .equipoCard .equipoIg {
+    font-size: 11px;
+    padding: 4px 6px;
+  }
+  
+  .equipoRoles p {
+    font-size: 13px;
+    margin: 2px 0;
+  }
+  
+  .equipoRoles li {
+    font-size: 13px;
+    margin: 2px 0;
+  }
+}

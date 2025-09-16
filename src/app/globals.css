@@ -8,14 +8,19 @@
   --hover-text-color: #dd002a;
   --third-text-color: #333;
   --arrobaIg-color: #a39799;
+}
 
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   color: var(--primary-text-color);
+  overflow-x: hidden;
 }
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
